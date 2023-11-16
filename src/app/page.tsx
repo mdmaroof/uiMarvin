@@ -1,5 +1,10 @@
 import Avatar from "../img/avatar.jpeg";
+import Image1 from "../img/image1.webp";
+import Image2 from "../img/image2.jpeg";
+import Image3 from "../img/image3.webp";
+
 import Image from "next/image";
+
 
 const menuItem = [
   "Home Page",
@@ -17,7 +22,6 @@ export default function Home() {
     <main className="flex min-h-screen flex-col">
       <div className=" bg-primary px-5 md:px-10 pt-6 pb-10 md:pb-16">
         <div className="flex flex-row justify-between items-center lg:items-start">
-
           <div className="text-xl text-black font-bold">AIPatrn</div>
 
           <div className="hidden lg:flex flex-row w-[600px] items-start">
@@ -25,6 +29,7 @@ export default function Home() {
               {menuItem.map((menu) => {
                 return (
                   <div
+                    key={menu}
                     className={`text-sm text-gray-400 ${
                       menu === "Home Page" && "font-bold !text-black"
                     }`}
@@ -92,8 +97,8 @@ export default function Home() {
             </div>
           </div>
 
-          <img
-            src="https://images.pexels.com/photos/13063592/pexels-photo-13063592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          <Image
+            src={Image1}
             alt="Image"
             className="w-full h-[400px]"
           />
@@ -112,8 +117,8 @@ export default function Home() {
               Compare to other
             </div>
           </div>
-          <img
-            src="https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          <Image
+            src={Image2}
             alt="Image2"
             className="w-full h-[400px]"
           />
@@ -126,8 +131,8 @@ export default function Home() {
             <div className="text-6xl">+20K</div>
             <div>Glass Pattern generates this week in the first release</div>
           </div>
-          <img
-            src="https://images.pexels.com/photos/884788/pexels-photo-884788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          <Image
+            src={Image3}
             alt="image"
             className="w-full h-[400px]"
           />

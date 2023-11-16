@@ -30,7 +30,7 @@ export default function Home() {
                 return (
                   <div
                     key={menu}
-                    className={`text-sm text-gray-400 ${
+                    className={`text-sm text-gray-400 cursor-pointer ${
                       menu === "Home Page" && "font-bold !text-black"
                     }`}
                   >
@@ -55,13 +55,13 @@ export default function Home() {
 
         <div className="text-2xl md:text-5xl text-black font-medium w-full md:w-[60%] leading-snug">
           Creative Projects with the Ultimate AI-Powered Pattern
-          <div className="flex flex-col-reverse md:flex-row md:gap-10 gap-5 md:items-center lg:w-[70%]">
+          <div className="flex flex-col-reverse md:flex-row md:gap-10 gap-5 md:items-center lg:w-[70%] md:mt-4">
             <div className="flex">
-              <div className="bg-black text-white rounded-full text-sm px-8 md:px-10 py-5 uppercase">
+              <div className="bg-black text-white rounded-full text-sm px-8 md:px-10 py-5 uppercase cursor-pointer">
                 start generating
               </div>
             </div>
-            <div className="flex-1 text-gray-400 text-xl mt-2 md:mt-4">
+            <div className="flex-1 text-gray-400 text-xl mt-2 md:mt-0">
               The Next generation <span className="text-black">Production</span>{" "}
               For Designers
             </div>
@@ -91,7 +91,7 @@ export default function Home() {
               Learn from best mentors
             </div>
             <div className="flex">
-              <div className="px-4 py-3 uppercase border border-white rounded-full text-white">
+              <div className="px-4 py-3 cursor-pointer uppercase border border-white rounded-full text-white">
                 start learning
               </div>
             </div>
@@ -108,12 +108,12 @@ export default function Home() {
             02
           </div>
           <div className="absolute bottom-4 px-4 text-white w-full">
-            <div className="border-b border-white pb-2">Free Edit</div>
-            <div className="border-b border-white pb-2 mt-4">Interactive</div>
-            <div className="border-b border-white pb-2 mt-4">
+            <div className="border-b cursor-pointer border-white pb-2">Free Edit</div>
+            <div className="border-b cursor-pointer border-white pb-2 mt-4">Interactive</div>
+            <div className="border-b cursor-pointer border-white pb-2 mt-4">
               Easy interface
             </div>
-            <div className="border-b border-white pb-2 mt-4">
+            <div className="border-b cursor-pointer border-white pb-2 mt-4">
               Compare to other
             </div>
           </div>
